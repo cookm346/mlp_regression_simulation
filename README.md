@@ -25,7 +25,7 @@ data %>%
 <br />
 
 I fit a multilayer perceptron (e.g., a single hidden layer feed forward
-neural network) with various number of neurons in the hidden layer from 1 to 32.
+neural network) with 1 to 32 neurons in the hidden layer.
 
 ``` r
 fit_nn <- function(n){
@@ -43,12 +43,12 @@ results <- tibble(n = 2^(0:5)) %>%
 
 <br />
 
-Below I plot the same x, y data six times. On each plot I show the
-neural network’s fit. With a small number of neurons in the hidden layer
-the model cannot fit the data. However, once the level reaches a
-significant level of complexity it can fit the sine wave. The bottom
-plot shows the Root Mean Squared Error for each model with varying
-levels of neurons in the hidden layer.
+Below, I plot the same x, y data six times. On each plot I show the
+neural network’s fit represented by the red line. With a small number of
+neurons in the hidden layer the model cannot fit the data. However, once
+the level reaches a significant level of complexity it can fit the sine
+wave well. The bottom plot shows the Root Mean Squared Error for each
+model with varying levels of neurons in the hidden layer.
 
 ``` r
 p1 <- ggplot() +
@@ -76,8 +76,8 @@ p1 / p2
 <br />
 
 The networks with 16 and 32 hidden layers show signs of overfitting
-where the model learns little curves in the functions that are not
+where the model learns little curves in the data that are not
 representative of the underlying data generating function (e.g., y =
-sin(x))
+sin(x)).
 
 <br /> <br /> <br /> <br /> <br />
