@@ -25,7 +25,7 @@ data %>%
 <br />
 
 I fit a multilayer perceptron (e.g., a single hidden layer feed forward
-neural network) with various number of neurons from 1 to 32.
+neural network) with various number of neurons in the hidden layer from 1 to 32.
 
 ``` r
 fit_nn <- function(n){
