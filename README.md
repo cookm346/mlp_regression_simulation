@@ -1,3 +1,5 @@
+### Multilayer perceptron example
+
 Here I generate some simple simulated data where y = sin(x) + e.
 
 ``` r
