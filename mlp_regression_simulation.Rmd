@@ -64,7 +64,7 @@ p2 <- results %>%
     ggplot(aes(n, rmse, label = n)) +
     geom_point() +
     geom_line() +
-    geom_text(hjust = "left", nudge_x = 1, nudge_y = .01) +
+    geom_text(hjust = "left", nudge_x = .2, nudge_y = .01) +
     labs(x = "Number of neurons in hidden layer",
          y = "RMSE")
 
